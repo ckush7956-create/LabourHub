@@ -259,17 +259,10 @@ function renderWorkers(list) {
       <div class="worker-card" data-index="${idx}">
         <strong>${worker.name}</strong>
         <span style="color: orange;">${'★'.repeat(worker.rating)}</span>
-<<<<<<< HEAD
         <div class="worker-meta">${langKey === 'hindi' ? "कार्यः " : "Trade:"} ${worker.trade}</div>
         <div class="worker-meta">${langKey === 'hindi' ? "स्थानः " : "Location:"} ${worker.location}</div>
         <div class="worker-meta">${langKey === 'hindi' ? "अनुभवः " : "Experience:"} ${worker.experience}</div>
         <div class="worker-meta">${langKey === 'hindi' ? "मूल्यः " : "Price:"} <span class="yellow">${worker.price}</span></div>
-=======
-        <div class="worker-meta">Trade: ${worker.trade}</div>
-        <div class="worker-meta">Location: ${worker.location}</div>
-        <div class="worker-meta">Experience: ${worker.experience}</div>
-        <div class="worker-meta">Price: <span class="yellow">${worker.price}</span></div>
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
       </div>
     `;
   });
@@ -311,7 +304,6 @@ function openModal(worker) {
   modalContent.innerHTML = `
     <span class="close" id="modalClose">&times;</span>
     <h2>${worker.name}</h2>
-<<<<<<< HEAD
     <p><strong>${langKey === 'hindi' ? "कार्यः" : "Trade:"}</strong> ${worker.trade}</p>
     <p><strong>${langKey === 'hindi' ? "स्थानः" : "Location:"}</strong> ${worker.location}</p>
     <p><strong>${langKey === 'hindi' ? "अनुभवः" : "Experience:"}</strong> ${worker.experience}</p>
@@ -322,18 +314,6 @@ function openModal(worker) {
       <button id="addCartBtn">${langKey === 'hindi' ? "कार्ट में जोड़ें" : "Add to Cart"}</button>
       <button id="callBtn">${langKey === 'hindi' ? "कॉल करें" : "Call"}</button>
       <button id="payBtn">${langKey === 'hindi' ? "भुगतान" : "Payment"}</button>
-=======
-    <p><strong>Trade:</strong> ${worker.trade}</p>
-    <p><strong>Location:</strong> ${worker.location}</p>
-    <p><strong>Experience:</strong> ${worker.experience}</p>
-    <p><strong>Price:</strong> <span class="yellow">${worker.price}</span></p>
-    <p><strong>Rating:</strong> <span style="color:orange">${'★'.repeat(worker.rating)}</span></p>
-    <p><strong>Phone:</strong> <a href="tel:${worker.phone}">${worker.phone}</a></p>
-    <div class="modal-btn-row">
-      <button id="addCartBtn">Add to Cart</button>
-      <button id="callBtn">Call</button>
-      <button id="payBtn">Payment</button>
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
     </div>
   `;
   detailModal.style.display = "block";
