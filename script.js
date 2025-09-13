@@ -14,7 +14,9 @@ const workers = [
   { name: "Amit Singh", trade: "Electrician", location: "Ghaziabad", rating: 5, phone: "+919761803403", experience: "4 years", price: "₹600/day" },
   { name: "Priya Sharma", trade: "Painter", location: "Faridabad", rating: 5, phone: "9876700009", experience: "3 years", price: "₹450/day" },
   { name: "Sartaj Saifi", trade: "Carpenter", location: "Delhi", rating: 4, phone: "+918791141490", experience: "5 years", price: "₹530/day" },
-  { name: "Kavita Joshi", trade: "Plumber", location: "Noida", rating: 5, phone: "7777788888", experience: "4 years", price: "₹420/day" }
+  { name: "Kavita Joshi", trade: "Plumber", location: "Noida", rating: 5, phone: "7777788888", experience: "4 years", price: "₹420/day" },
+  { name: "Pushkar sharma", trade: "Electrician", location: "hapur", rating: 4, phone: "8958768744", experience: "8 years", price: "₹550/day" }
+ 
 ];
 let cart = [];
 
