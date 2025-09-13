@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
   <style>
     .tab-btn {
       background: #fff;
@@ -53,17 +52,6 @@
     <!-- Login Form -->
     <form id="loginForm" autocomplete="off" style="display:none;">
       <h3 style="margin-bottom:5px;">Login to continue</h3>
-=======
-</head>
-<body>
-
-<section id="login-section" class="login-bg">
-  <div class="full-bg-img"></div>
-  <div class="login-glass">
-    <h2><span class="white">Labour</span><span class="yellow">Hub</span></h2>
-    <h3>Login to continue</h3>
-    <form id="loginForm">
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
       <input type="email" id="email" placeholder="Email" required>
       <input type="password" id="password" placeholder="Password" required>
       <button type="submit">Login</button>
@@ -72,12 +60,8 @@
   </div>
 </section>
 
-<<<<<<< HEAD
 <!-- Dashboard Section -->
 <section id="dashboard-section" style="display:none;">
-=======
-<section id="dashboard-section">
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
   <div class="animated-bg"></div>
   <header class="main-header">
     <div class="logo"><span class="white">Labour</span><span class="yellow">Hub</span></div>
@@ -88,7 +72,6 @@
       <a href="#" id="contactNav">Contact</a>
       <button class="add-labour-btn" id="addLabourBtn">Add Labour</button>
       <button class="logout-btn" onclick="logout()">Logout</button>
-<<<<<<< HEAD
       <div class="lang-dropdown">
         <button id="langDropdownBtn" class="lang-btn">Language ▼</button>
         <div id="langDropdownMenu" class="lang-dropdown-menu" style="display:none;">
@@ -108,19 +91,6 @@
     <div class="search-bar">
       <input type="text" id="searchInput" list="searchSuggestions" placeholder="Search trades, e.g. plumber, electrician, carpenter" autocomplete="off">
       <datalist id="searchSuggestions"></datalist>
-=======
-      <span id="cartCount">0</span>
-    </nav>
-  </header>
-  <div id="drawer-bg" class="drawer-bg"></div>
-  <div id="drawer" class="drawer"></div>
-  <main>
-    <h1>
-      <span class="blue">Skilled labour</span> <span class="yellow">on demand</span> <span class="blue">near you</span>
-    </h1>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search trades, e.g. plumber, electrician, carpenter">
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
       <button id="searchBtn">Search</button>
     </div>
     <div class="tags">
@@ -130,10 +100,6 @@
       <button class="tag-btn">Painter</button>
     </div>
     <div class="workers-list" id="workersList"></div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
     <div class="worker-footer-msg" id="workerFooter">
       <strong>Find workers</strong>  Showing available workers in <b>Delhi NCR</b> – verified data
     </div>
@@ -146,7 +112,6 @@
         <li>Support for urgent and planned jobs across Delhi NCR.</li>
       </ul>
       <p>
-<<<<<<< HEAD
         <span class="yellow">Let us take care of your repairs, improvements, and projects. Hire trusted labours, get work done quickly and hassle-free!</span>
       </p>
     </div>
@@ -156,51 +121,10 @@
   <div id="addLabourModal" class="modal"><div class="modal-content"><span class="close" onclick="closeModalById('addLabourModal')">&times;</span><h2>Add New Labour</h2><form id="addLabourForm"><input type="text" id="addName" placeholder="Name" required><input type="text" id="addTrade" placeholder="Trade (e.g., Plumber)" required><input type="text" id="addLocation" placeholder="Location" required><input type="text" id="addExperience" placeholder="Experience (e.g., 5 years)" required><input type="text" id="addPrice" placeholder="Price (e.g., ₹500/day)" required><input type="text" id="addPhone" placeholder="Phone Number" required><button type="submit" id="submitLabourBtn">Submit</button></form></div></div>
   <div id="howItWorksBox" style="display:none;"><h2>How LabourHub Works</h2><p>Humari website skilled labours ko asaani se logon tak pahuchati hai. User apne shehar aur trade ke hisaab se labour search kar sakte hain, unki experience aur rate check kar sakte hain. Labour verified hai, har ek ko rating milti hai. Book karne mein safe & secure transaction hota hai.</p><button id="closeHowWorks">Close</button></div>
   <div id="contactInfoModal" class="modal"><div class="modal-content"><span class="close" id="contactInfoClose">&times;</span><h2>Contact & Support</h2><div><p><strong>Toll-Free Number:</strong> <a href="tel:18001234567">1800-123-4567</a></p><p><strong>WhatsApp Help Line:</strong> <a href="https://wa.me/919876543210" target="_blank">+91 98765 43210</a></p><p><strong>Email:</strong> <a href="mailto:support@labourhub.com">support@labourhub.com</a></p><p><strong>Company Links:</strong><a href="https://labourhub.com/about" target="_blank">About Us</a> |<a href="https://labourhub.com/faqs" target="_blank">FAQ</a> |<a href="https://labourhub.com/careers" target="_blank">Careers</a></p><hr><p><strong>Support Timings:</strong> Monday to Saturday, 10am–7pm</p><p><strong>Detailed Help:</strong> Our support team is available for booking help, payments, technical issues, and urgent queries.</p></div></div></div>
-=======
-        <span class="yellow">Let us take care of your repairs, improvements, and projects. 
-        Hire trusted labours, get work done quickly and hassle-free!</span>
-      </p>
-    </div>
-  </main>
-  
-  <div id="detailModal" class="modal">
-    <div class="modal-content" id="modalContent"></div>
-  </div>
-
-  <div id="paymentModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModalById('paymentModal')">&times;</span>
-      <h2>Secure Payment</h2>
-      <p>This is where the payment integration would go.</p>
-      <p>To integrate with a real backend, you'll need to add a form to collect payment information and send it to a payment gateway (like Stripe or Razorpay).</p>
-      <div class="modal-btn-row">
-        <button id="confirmPayBtn">Confirm Payment</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="addLabourModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModalById('addLabourModal')">&times;</span>
-      <h2>Add New Labour</h2>
-      <form id="addLabourForm">
-        <input type="text" id="addName" placeholder="Name" required>
-        <input type="text" id="addTrade" placeholder="Trade (e.g., Plumber)" required>
-        <input type="text" id="addLocation" placeholder="Location" required>
-        <input type="text" id="addExperience" placeholder="Experience (e.g., 5 years)" required>
-        <input type="text" id="addPrice" placeholder="Price (e.g., ₹500/day)" required>
-        <input type="text" id="addPhone" placeholder="Phone Number" required>
-        <button type="submit" id="submitLabourBtn">Submit</button>
-      </form>
-    </div>
-  </div>
-
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
   <footer class="main-footer" id="mainFooter">
     <div>
       <div>
         <strong>Get to Know Us</strong><br>
-<<<<<<< HEAD
         <a href="#" class="footer-link" data-modal="aboutLabourHub">About LabourHub</a><br>
         <a href="#" class="footer-link" data-modal="careers">Careers</a><br>
         <a href="#" class="footer-link" data-modal="communityStories">Community Stories</a><br>
@@ -226,33 +150,6 @@
         <a href="#" class="footer-link" data-modal="faq">FAQ</a><br>
         <a href="#" class="footer-link" data-modal="privacy">Privacy Policy</a><br>
         <a href="#" class="footer-link" data-modal="terms">Terms of Service</a>
-=======
-        About LabourHub<br>
-        Careers<br>
-        Community Stories<br>
-        Media
-      </div>
-      <div>
-        <strong>Connect with Us</strong><br>
-        Facebook<br>
-        Twitter<br>
-        Instagram<br>
-        LinkedIn
-      </div>
-      <div>
-        <strong>Services</strong><br>
-        Find Workers<br>
-        Post a Job<br>
-        Secure Payment<br>
-        Verification
-      </div>
-      <div>
-        <strong>Help</strong><br>
-        Contact Us<br>
-        FAQ<br>
-        Privacy Policy<br>
-        Terms of Service
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
       </div>
     </div>
     <div>
@@ -261,7 +158,6 @@
       <button>India</button>
     </div>
   </footer>
-<<<<<<< HEAD
   <div id="footerModal" class="modal">
     <div class="modal-content">
       <span class="close" id="footerModalClose">&times;</span>
@@ -289,20 +185,6 @@ showLoginTab.onclick = function() {
   showLoginTab.classList.add("active");
 };
 </script>
-=======
-</section>
-
-<style>
-  .full-bg-img {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: url('https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/8d21c6fd-edd1-46f5-88e9-feea7b2056a4.png') center center/cover no-repeat;
-    z-index: -1;
-    filter: brightness(0.81) blur(1.2px);
-  }
-</style>
->>>>>>> 2ab26714c03d36f6cfc24e2a2669133410aeefc5
 <script src="script.js"></script>
 </body>
 </html>
