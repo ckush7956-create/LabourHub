@@ -72,6 +72,8 @@ h1, h2, h3 { font-family: inherit; }
   margin-bottom: 10px;
   position: relative;
   z-index:20;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main-header .logo { font-size: 2em; font-weight: bold; color:#fff; }
 .main-header nav a {
@@ -160,10 +162,11 @@ h1, h2, h3 { font-family: inherit; }
   100% {background-position: 0% 60%;}
 }
 main {
-  width: 97%;
+  width: 100%;
   max-width: 1200px;
   margin: 35px auto 0 auto;
   position: relative;
+  box-sizing: border-box;
 }
 main h1 { 
   text-align:center;
@@ -297,6 +300,8 @@ main h1 {
   font-size: 16px;
   border-radius: 22px 22px 0 0;
   box-shadow: 0 -8px 24px #00000021;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main-footer > div:first-child {
   display: flex; gap: 70px; margin-bottom: 16px; flex-wrap: wrap;
@@ -416,4 +421,63 @@ main h1 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+@media (max-width: 700px){
+  .main-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 16px 8px;
+  }
+  .main-header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .main-header nav a,
+  .logout-btn,
+  #cartCount,
+  .main-header .logo {
+    margin-bottom: 7px;
+    width: auto;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 700px){
+  .workers-list {
+    flex-direction: column;
+    gap:16px;
+    align-items:center;
+    width:100%;
+    margin:0;
+  }
+  .worker-card {
+    max-width: 96vw;
+    min-width: 85vw;
+  }
+}
+
+@media (max-width: 700px){
+  .search-bar input[type="text"] {
+    width: 65vw;
+    min-width: unset;
+  }
+  .search-bar button {
+    width: auto;
+    padding:8px 14px;
+  }
+  .main-header button,
+  .main-header select {
+    min-width: 90px;
+    margin-bottom: 8px;
+  }
+}
+
+
+body {
+  overflow-x: hidden;
 }
