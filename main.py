@@ -4,7 +4,7 @@ from fastapi.security import HTTPBearer
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 import os
-from dotenv import load_dotenv
+from dotenv.main import load_dotenv
 
 from database import connect_to_mongo, close_mongo_connection
 from routers import auth, workers, bookings
