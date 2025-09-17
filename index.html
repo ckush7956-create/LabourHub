@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LabourHub | Login & Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SECTION -->
+<section id="login-section" class="login-bg">
+  <div class="full-bg-img"></div>
+  <div class="login-glass">
+    <h2><span class="blue">Labour</span><span class="yellow">Hub</span></h2>
+    <h3>Login to continue</h3>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</section>
+
+<!-- DASHBOARD SECTION -->
+<section id="dashboard-section">
+  <div class="animated-bg"></div>
+  <header class="main-header">
+    <div class="logo"><span class="blue">Labour</span><span class="yellow">Hub</span></div>
+    <nav>
+      <a href="#" id="aboutNav">About</a>
+      <a href="#" id="jobsNav">Jobs</a>
+      <a href="#" id="howNav">How it works</a>
+      <a href="#" id="contactNav">Contact</a>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+  </header>
+  <!-- Drawer/Modal for navigation -->
+  <div id="drawer-bg" class="drawer-bg"></div>
+  <div id="drawer" class="drawer"></div>
+  <main>
+    <h1>
+      <span class="blue">Skilled labour</span> <span class="yellow">on demand</span> <span class="blue">near you</span>
+    </h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search trades, e.g. plumber, electrician, carpenter">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="tags">
+      <button class="tag-btn">Plumber</button>
+      <button class="tag-btn">Electrician</button>
+      <button class="tag-btn">Carpenter</button>
+      <button class="tag-btn">Painter</button>
+    </div>
+    <div class="workers-list" id="workersList"></div>
+    <div class="worker-footer-msg" id="workerFooter">
+      <strong>Find workers</strong>  Showing available workers in <b>Delhi NCR</b> – demo data
+    </div>
+    <div class="feature-section">
+      <h2>Why LabourHub?</h2>
+      <ul>
+        <li>All labours are <b>verified</b> and <b>experienced</b> in their trades.</li>
+        <li>Get quick service at competitive rates — price and ratings upfront.</li>
+        <li>Book with a single click, safe and secure transactions.</li>
+        <li>Support for urgent and planned jobs across Delhi NCR.</li>
+      </ul>
+      <p>
+        <span class="yellow">Let us take care of your repairs, improvements, and projects. 
+        Hire trusted labours, get work done quickly and hassle-free!</span>
+      </p>
+    </div>
+  </main>
+  <!-- WORKER DETAILS MODAL -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="main-footer" id="mainFooter">
+    <div>
+      <div>
+        <strong>Get to Know Us</strong><br>
+        About LabourHub<br>
+        Careers<br>
+        Community Stories<br>
+        Media
+      </div>
+      <div>
+        <strong>Connect with Us</strong><br>
+        Facebook<br>
+        Twitter<br>
+        Instagram<br>
+        LinkedIn
+      </div>
+      <div>
+        <strong>Services</strong><br>
+        Find Workers<br>
+        Post a Job<br>
+        Secure Payment<br>
+        Verification
+      </div>
+      <div>
+        <strong>Help</strong><br>
+        Contact Us<br>
+        FAQ<br>
+        Privacy Policy<br>
+        Terms of Service
+      </div>
+    </div>
+    <div>
+      <span class="blue">Labour</span><span class="yellow">Hub</span> &copy; 2025 LabourHub. All rights reserved.
+      <button>English</button>
+      <button>India</button>
+    </div>
+  </footer>
+</section>
+
+<!-- Full background image for login page -->
+<style>
+.full-bg-img {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  z-index: -1;
+  filter: brightness(0.81) blur(1.2px);
+}
+</style>
+<script src="script.js"></script>
+</body>
+</html>
